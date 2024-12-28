@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  background-color: rgb(193, 193, 248);
+  width: 80vw;
+  height: 60vh;
+  margin-top: 100px;
+  display: grid;
+  padding: 4rem;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: auto;
+  gap: 5px;
+  grid-template-areas:
+    ". . . . . grid-8 ."
+    ". . gird-7 grid-7 grid-7 grid-8 ."
+    "grid-1 grid-2 grid-2 grid-2 grid-6 grid-8 ."
+    "grid-1 grid-2 grid-2 grid-2 grid-6 grid-5 grid-5"
+    "grid-3 grid-3 grid-3 grid-4 grid-6 grid-5 grid-5"
+    "grid-3 grid-3 grid-3 grid-4 grid-6 grid-9 grid-9"
+    ". . . . grid-6 grid-9 grid-9"
+    ". . . . grid-6 . .";
+}
+
+.grid-1 {
+  grid-area: grid-1;
+  background-color: green;
+}
+
+.grid-2 {
+  grid-area: grid-2;
+  background-color: green;
+}
+
+.grid-3 {
+  grid-area: grid-3;
+  background-color: purple;
+}
+
+.grid-4 {
+  grid-area: grid-4;
+  background-color: blue;
+}
+
+.grid-5 {
+  grid-area: grid-5;
+  background-color: green;
+}
+
+.grid-6 {
+  grid-area: grid-6;
+  background-color: purple;
+}
+
+.grid-7 {
+  grid-area: grid-7;
+  background-color: purple;
+  width: 100%;
+}
+
+.grid-8 {
+  grid-area: grid-8;
+  background-color: blue;
+}
+
+.grid-9 {
+  grid-area: grid-9;
+  background-color: blue;
+}
